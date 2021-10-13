@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+ul {
+    list-style: none;
+}
+h4 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: green;
+}
+p {
+    word-break: break-word;
+    line-height: 24px;
+}
+li.tudo-item.completed-item span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px antiquewhite;
+}
+
+.container h3 {
+    color: green;
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.tudo-div form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.input-field {
+    flex-basis: 75%;
+}
+.input-field input[type=text] {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+button[type=submit] {
+    background-color: green;
+    color: #fff;
+    flex-basis: 25%;
+    border: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tudo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px 10px;
+    gap: 30px;
+}
+.tudo-item:nth-child(odd){
+    background: #615B53;
+}
+.tudo-item:nth-child(even){
+    background: #797269;
+}
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+#done {
+    color: #10c810;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#edit {
+    color: yellow;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#delete {
+    color: red;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+li.tudo-item.completed-item {
+    color: #b4b4b4;
+}
+
+button#deleteAll {
+    background: #ae1414;
+    border: none;
+    outline: none;
+    color: #eee;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
